@@ -1,0 +1,179 @@
+
+@font-face{
+    font-family: Roboto;
+    src: url(../fontes/Roboto/Roboto-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background: gainsboro;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: greenyellow;
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+    box-shadow: 1px 0 3px rgba(0,0,4);
+}
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div.novo-post{
+width: 100%;
+height: 240px;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin:50px 0;
+padding: 25px;
+
+background: white;
+border-radius: 10px;
+box-shadow: 1px 0 3px rgba(0, 0, 7);
+}
+
+div.info-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div.img-user{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: black;  
+}
+
+div.novo-post div.info-user strong{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+div.novo-post form.formPost{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.novo-post form.formPost textarea{
+    height: 90px;
+    background: gainsboro;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+}
+
+div.novo-post form.formPost div.icones-butoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.novo-post form.formPost div.icones-butoes div.icone button{
+outline: none;
+margin-right: 10px;
+background: white;
+border: 0;
+cursor: pointer;
+}
+
+.btn-submit-form{
+    background: greenyellow;
+    padding: 10px 50px;
+    color: black;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+
+ul.posts li.post{
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px
+    width 100%;
+    box-shadow: 1px 0 3px rgba(0,0,0.2);
+    list-style: none;
+}
+
+ul.posts li.post div.li-info-user div.nome-hora{
+margin-left: 10px;
+}
+
+ul.posts li.post div.li-info-user{
+    display: flex;
+    align-items: center;
+
+}
+
+ul.posts li.post div.li-info-user div.img-user-post{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: blue;
+}
+
+ul.posts li.post >p{
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+ul.posts li.post div.action-btn-post{
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.action-btn-post button.files-post{
+padding: 5px 20px;
+border: 0;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 10px;
+border-radius: 10px;
+font-weight: bold;
+cursor: pointer;
+font-size: 16px;
+}
+
+ul.posts li.post div.action-btn-post button.-files-post img{
+    margin-right: 5px;
+    
+}
+
+.like{
+    background: red;
+}
+
+.comment{
+    background: yellow;
+}
+
+.share{
+    background: turquoise;
+}
